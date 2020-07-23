@@ -10,14 +10,14 @@ The action is implemented to provide a comma seperated string of version ids for
 Example: Select all package versions containing the string "SNAPSHOT", but keep the latest 5 versions.
 ```
 - name: "Select versions to delete."
-  uses: virtualidentityag/package-version-selector@master
+  uses: digital-ai/package-version-selector@master
   id: version-selector
   with:
-    owner: virtualidentityag
+    owner: digital-ai
     repository: ${{ github.repository }}
     github-token: ${{ secrets.github_token }}
     package: "package-name"
-    filter: "SNAPSHOT"
+    filter: "nightly"
     keep: 5
 
 - uses: actions/delete-package-versions@v1
