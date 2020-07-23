@@ -7,7 +7,7 @@ The action is implemented to provide a comma seperated string of version ids for
 ## Usage:
 
 
-Example: Select all package versions containing the string "SNAPSHOT", but keep the latest 5 versions.
+Example: Select all package versions containing the string "nightly", but keep the latest 5 versions.
 ```
 - name: "Select versions to delete."
   uses: digital-ai/package-version-selector@master
